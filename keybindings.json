@@ -1,8 +1,17 @@
 [
   {
-    "command":"workbench.action.terminal.toggleTerminal",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "key": "cmd+alt+shift+t"
+  },
+  {
+    "command": "workbench.action.terminal.focus",
     "key": "cmd+shift+t"
   },
+  {
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus",
+    "key": "cmd+shift+t"
+  }
   {
     "command": "workbench.action.terminal.new",
     "when": "terminalFocus",
