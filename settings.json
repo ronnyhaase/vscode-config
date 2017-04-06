@@ -1,0 +1,12 @@
+{
+  "editor.fontFamily" : "'Source Code Pro', monospace",
+  "editor.fontSize": 18,
+  "editor.lineHeight": 32,
+  "editor.minimap.enabled": true,
+  "editor.renderWhitespace": "all",
+  "editor.rulers": [80, 100],
+  "files.trimTrailingWhitespace": true,
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.fontSize": 16,
+  "workbench.welcome.enabled": false
+}
