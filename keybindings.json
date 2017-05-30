@@ -1,4 +1,26 @@
 [
+  // Sidebar
+  { "key": "cmd+0", "command": "workbench.action.toggleSidebarVisibility" },
+  { "key": "cmd+1", "command": "workbench.view.explorer" },
+  { "key": "cmd+2", "command": "workbench.view.search" },
+  { "key": "cmd+3", "command": "workbench.view.scm" },
+  { "key": "cmd+4", "command": "workbench.view.debug" },
+  { "key": "cmd+5", "command": "workbench.view.extensions" },
+
+  // Search, Find, Replace
+  { "key": "cmd+f" , "command": "actions.find" },
+  { "key": "cmd+shift+f", "command": "editor.action.startFindReplaceAction" },
+  {
+    "command": "workbench.action.findInFiles",
+    "when": "!searchInputBoxFocus",
+    "key": "cmd+alt+shift+f"
+  },
+
+  // Terminal
+  {
+    "command": "workbench.action.focusActiveEditorGroup",
+    "key": "cmd+shift+e"
+  },
   {
     "command": "workbench.action.terminal.toggleTerminal",
     "key": "cmd+alt+shift+t"
@@ -31,5 +53,22 @@
     "command": "workbench.action.terminal.focusPrevious",
     "when": "terminalFocus",
     "key": "cmd+alt+left"
+  },
+
+  // ...
+  {
+    "command": "editor.action.deleteLines",
+    "when": "editorTextFocus && !editorReadonly",
+    "key": "alt+d alt+d"
+  },
+  {
+    "command": "editor.action.insertLineAfter",
+    "when": "editorTextFocus && !editorReadonly",
+    "key": "alt+o alt+o"
+  },
+  {
+    "command": "editor.action.insertLineBefore",
+    "when": "editorTextFocus && !editorReadonly",
+    "key": "alt+shift+o alt+shift+o"
   }
 ]
