@@ -57,6 +57,16 @@
 
   // Editor Actions
   {
+    "command": "cursorTop",
+    "when": "editorTextFocus",
+    "key": "alt+g"
+  },
+  {
+    "command": "cursorBottom",
+    "when": "editorTextFocus",
+    "key": "alt+shift+g"
+  },
+  {
     "command": "editor.action.deleteLines",
     "when": "editorTextFocus && !editorReadonly",
     "key": "alt+d"
