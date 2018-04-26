@@ -8,8 +8,14 @@
   { "key": "cmd+5", "command": "workbench.view.extensions" },
 
   // Search, Find, Replace
-  { "key": "cmd+f" , "command": "actions.find" },
-  { "key": "cmd+shift+f", "command": "editor.action.startFindReplaceAction" },
+  {
+    "command": "actions.find",
+    "key": "cmd+f"
+  },
+  {
+    "command": "editor.action.startFindReplaceAction",
+    "key": "cmd+shift+f"
+  },
   {
     "command": "workbench.action.findInFiles",
     "when": "!searchInputBoxFocus",
@@ -82,8 +88,18 @@
     "key": "alt+shift+o"
   },
   {
-    "key": "alt+f",
     "command": "editor.action.formatSelection",
-    "when": "editorHasDocumentSelectionFormattingProvider && editorHasSelection && editorTextFocus && !editorReadonly"
-  }
+    "when": "editorHasDocumentSelectionFormattingProvider && editorHasSelection && editorTextFocus && !editorReadonly",
+    "key": "alt+f"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+ctrl+space",
+    "command": "editor.action.triggerParameterHints",
+    "when": "editorHasSignatureHelpProvider && editorTextFocus"
+  },
 ]
