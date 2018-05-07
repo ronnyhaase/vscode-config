@@ -51,6 +51,11 @@
     "key": "cmd+w"
   },
   {
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus",
+    "key": "cmd+\\"
+  },
+  {
     "command": "workbench.action.terminal.focusNext",
     "when": "terminalFocus",
     "key": "cmd+alt+right"
@@ -59,6 +64,16 @@
     "command": "workbench.action.terminal.focusPrevious",
     "when": "terminalFocus",
     "key": "cmd+alt+left"
+  },
+  {
+    "command": "workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus",
+    "key": "cmd+alt+down"
+  },
+  {
+    "command": "workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus",
+    "key": "cmd+alt+up"
   },
 
   // Editor Actions
