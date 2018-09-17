@@ -11,5 +11,6 @@
   "terminal.integrated.fontSize": 16,
   "workbench.welcome.enabled": false,
   "window.zoomLevel": 0,
-  "workbench.iconTheme": "vs-seti"
+  "workbench.iconTheme": "vs-seti",
+  "terminal.integrated.shell.osx": "/bin/zsh"
 }
