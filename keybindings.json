@@ -117,4 +117,9 @@
     "command": "editor.action.triggerParameterHints",
     "when": "editorHasSignatureHelpProvider && editorTextFocus"
   },
+  {
+    "key": "alt+-",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  }
 ]
